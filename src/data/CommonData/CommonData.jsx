@@ -99,6 +99,10 @@ export const navMenus = [
             text: "Home Three",
             path: "/home-three",
         },
+        {
+            text: "Home Four",
+            path: "/home-four",
+        },
       ],
     },
     {

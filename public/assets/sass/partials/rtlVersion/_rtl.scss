@@ -141,13 +141,6 @@
     /* ========================= Home Three RTL Css End ============================== */
 
     /* ========================= Home Four RTL Css Start ============================== */
-    .banner-four__inner {
-        background-color: hsl(var(--white));
-        mask-image: url(../images/shapes/banner-four-shape.png);
-        mask-repeat: no-repeat;
-        mask-size: contain;
-        transform: scaleX(-1);
-    }
     @media (max-width: 991px) {
         .banner-four__inner { 
             mask-image: none;

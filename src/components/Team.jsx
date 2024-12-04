@@ -3,10 +3,10 @@ import SectionHeading from '../common/SectionHeading';
 import { teams } from '../data/OthersPageData/OthersPageData';
 import TeamItem from './items/TeamItem';
 
-const Team = () => {
+const Team = ({ sectionClass }) => {
     return (
         <>
-            <section className="team padding-y-60">
+            <section className={`team ${sectionClass}`}>
                 <div className="container container-two">
 
                 <SectionHeading

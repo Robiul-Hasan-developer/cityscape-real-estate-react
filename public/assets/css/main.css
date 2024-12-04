@@ -6743,13 +6743,6 @@ button.slick-next {
     }
 }
 
-.banner-four__inner {
-    background-color: hsl(var(--white));
-    mask-image: url(../images/shapes/banner-four-shape.png);
-    mask-repeat: no-repeat;
-    mask-size: contain;
-}
-
 @media screen and (max-width: 991px) {
     .banner-four__inner {
         mask-image: unset;
@@ -8626,14 +8619,6 @@ p.account-alert:last-child {
 [dir=rtl] .common-accordion .accordion-button::after {
     left: 26px;
     right: auto !important;
-}
-
-[dir=rtl] .banner-four__inner {
-    background-color: hsl(var(--white));
-    mask-image: url(../images/shapes/banner-four-shape.png);
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    transform: scaleX(-1);
 }
 
 @media (max-width: 991px) {

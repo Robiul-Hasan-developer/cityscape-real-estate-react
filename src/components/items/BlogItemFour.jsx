@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { getCurrentMonth, slugURL } from '../../utility/Utility';
 
-const BlogItemThree = ({blogItem}) => {
+const BlogItemFour = ({blogItem}) => {
     
    // Get Current month form utility
    const currentMonthName = getCurrentMonth();  
@@ -13,12 +13,14 @@ const BlogItemThree = ({blogItem}) => {
     const blogURL = slugURL({url: 'blog', slug: title}); 
 
     return (
-        <div className="blog-item border border-color">
+        <div className="blog-item">
             <div className="blog-item__thumb">
                 <Link to={blogURL} state={{ thumb, title, admin, desc}} className="blog-item__thumb-link">
                     <img src={thumb} className="cover-img" alt=""/>
                 </Link>
-                <span className="blog-item__date top-0 font-12 mt-3 end-0 me-4"> {new Date().getDate()} {currentMonthName} </span>
+                <span className="blog-item__date style-three font-18"> 
+                    {new Date().getDate()}  <span className="text">{currentMonthName}</span>
+                </span>
             </div>
             <div className="blog-item__content bg-white border-0">
                 <ul className="text-list border-0 p-0 flx-align">
@@ -37,7 +39,7 @@ const BlogItemThree = ({blogItem}) => {
                     <Link to={blogURL} state={{ thumb, title, admin, desc}} className="blog-item__title-link border-effect"> {title}</Link>
                 </h6>
 
-                <Link to={blogURL} state={{ thumb, title, admin, desc}} className="simple-btn text-gradient fw-semibold"> 
+                <Link to={blogURL} state={{ thumb, title, admin, desc}} className="btn btn-outline-light"> 
                     {linkText}
                     <span className="icon-right text-gradient"> <i className="fas fa-arrow-right"></i> </span>
                 </Link>
@@ -47,4 +49,4 @@ const BlogItemThree = ({blogItem}) => {
     );
 };
 
-export default BlogItemThree;
+export default BlogItemFour;

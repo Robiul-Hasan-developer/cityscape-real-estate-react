@@ -36,7 +36,7 @@ const AboutUs = () => {
 
             <AboutThree/>    
 
-            <Team/>
+            <Team sectionClass=""/>
 
             <PropertyTypeThree/> 
 

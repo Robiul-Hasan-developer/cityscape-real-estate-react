@@ -1,11 +1,22 @@
 import React from 'react';
 
 import Header from './../common/Header';
-import Banner from '../components/Banner';
 import Footer from '../common/Footer';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
 import PageTitle from '../common/PageTitle';
+import TopHeaderFour from '../components/TopHeaderFour';
+import BannerFour from '../components/BannerFour';
+import AboutFour from '../components/AboutFour';
+import LatestPropertiesFour from '../components/LatestPropertiesFour';
+import PropertyFour from '../components/PropertyFour';
+import CounterFive from './../components/CounterFive';
+import ProjectFour from '../components/ProjectFour';
+import TestimonialsFour from '../components/TestimonialsFour';
+import WorkProcessFour from '../components/WorkProcessFour';
+import Team from '../components/Team';
+import BlogFour from '../components/BlogFour';
+import Cta from './../components/Cta';
 
 const HomeFour = () => {
     return (
@@ -16,6 +27,9 @@ const HomeFour = () => {
             <MobileMenu/>
             
             <main className="body-bg">
+
+                {/* Top Header */}
+                <TopHeaderFour/>
 
                 {/* Header */}
                 <Header 
@@ -33,10 +47,39 @@ const HomeFour = () => {
                     showContactNumber={false}
                 />
 
-                {/* Banner */}
-                <Banner/>
+                {/* BannerFour */}
+                <BannerFour/>
 
-         
+                {/* AboutFour */}
+                <AboutFour/>
+
+                {/* LatestPropertiesFour */}
+                <LatestPropertiesFour/>
+
+                {/* Property */}
+                <PropertyFour/>
+
+                {/* CounterFive */}
+                <CounterFive/>
+
+                {/* ProjectFour */}
+                <ProjectFour/>
+
+                {/* TestimonialsFour */}
+                <TestimonialsFour/>
+
+                {/* WorkProcessFour */}
+                <WorkProcessFour/>
+
+                {/* Team */}
+                <Team sectionClass="padding-t-60"/>
+
+                {/* Blog */}
+                <BlogFour/>
+
+                {/* NewsletterFour */}
+                <Cta/>
+
                 {/* Footer */}
                 <Footer/>
                 

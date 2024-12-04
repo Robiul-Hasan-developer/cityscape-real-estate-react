@@ -150,7 +150,7 @@
     margin-bottom: clampCal(12, 20);
     .link {
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
       overflow: hidden;
       &:hover {
@@ -329,6 +329,15 @@
   }
   > span {
     transition: 0.2s linear;
+  }
+}
+
+.item-text-white {
+  h6, a, span, p {
+    color: hsl(var(--heading-color));
+  }
+  .property-item__bottom {
+    border-color: var(--border-color);
   }
 }
 /* ============================ Latest property Css End ==================== */

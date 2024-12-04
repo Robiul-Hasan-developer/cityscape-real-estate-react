@@ -33,6 +33,10 @@
     margin-bottom: clampCal(24, 40) !important;
 }
 
+.mb-72 {
+    margin-bottom: clampCal(32, 72) !important;
+}
+
 /* Bg Color */
 .text-gradient {
     background: var(--main-gradient);
