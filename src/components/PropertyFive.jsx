@@ -1,9 +1,8 @@
 import React from 'react';
-import Slider from "react-slick";
 import SectionHeading from '../common/SectionHeading';
-import { projectItems } from '../data/OthersPageData/OthersPageData';
-import { slugURL } from '../utility/Utility';
-import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import { properties } from '../data/HomeOneData/HomeOneData';
+import PropertyItem from './items/PropertyItem';
 
 var settings = {
     slidesToShow: 3,
@@ -15,7 +14,6 @@ var settings = {
     infinite: true,
     pauseOnHover: true,
     arrows: true,
-    centerMode: true,
     responsive: [
         {
           breakpoint: 991,
@@ -32,12 +30,12 @@ var settings = {
     ]
 };
 
-const ProjectFour = () => {
+const PropertyFive = () => {
 
     const slider = React.useRef(null);
     
     return (
-        <section className="project-section padding-t-120 padding-b-60">
+        <section className="property-four padding-y-120">
             <div className="container container-two">
 
                 <div className="d-flex align-items-sm-center flex-sm-row flex-column gap-4 mb-72">
@@ -61,37 +59,33 @@ const ProjectFour = () => {
                         </button>
                     </div>
                 </div>
-        
-                <div className="project-page__inner arrow-style-two position-relative overflow-hidden">
-                    
+
+                <div className="overflow-hidden">
                     <Slider {...settings}  ref={slider}>
                         {
-                            projectItems.map((projectItem, projectItemIndex) => {
-
-                                const {id, thumb, title, desc} = projectItem; 
-                                // Generate dynamic URL based on the property title
-                                const projectURL = slugURL({url: 'project', slug: title}); 
-                                
+                            properties.slice(0, 6).map((property, index) => {
                                 return (
-                                    <div className={`col-md-4 col-sm-6 col-xs-6`} key={projectItemIndex}>
-                                        <div className="project-page-thumb">
-                                            <img src={thumb} alt="" className="cover-img"/>
-                                            <div className="project-page-content">
-                                                <h6 className="project-page-content__title">
-                                                    <Link to={projectURL} state={{ id, title, thumb, desc }} className="link">{title}</Link>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="col-lg-4 col-sm-6" key={index}>
+                                        <PropertyItem 
+                                            itemClass="item-text-black style-three border border-color shadow-none bg-white"
+                                            btnClass=""
+                                            property={property}
+                                            badgeText="Sales"
+                                            badgeClass="property-item__badge text-white"
+                                            iconsClass=""
+                                            btnRenderBottom={false}
+                                            btnRenderRight={true}
+                                        />
+                                    </div> 
                                 )
                             })
                         }
                     </Slider>
-
                 </div>
+
             </div>
         </section>
     );
 };
 
-export default ProjectFour;
+export default PropertyFive;

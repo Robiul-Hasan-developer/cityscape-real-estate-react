@@ -3,7 +3,7 @@ import LatestPropertiesFourThumb from '../../public/assets/images/thumbs/latest-
 
 const LatestPropertiesFour = () => {
     return (
-        <section className="latest-properties-four padding-y-60 @@classes">
+        <section className="latest-properties-four padding-y-60">
         <div className="container container-two">
             <div className="row gy-4 flex-wrap-reverse">
                 <div className="col-lg-5">

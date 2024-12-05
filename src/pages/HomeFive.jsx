@@ -1,11 +1,20 @@
 import React from 'react';
 
 import Header from './../common/Header';
-import Banner from '../components/Banner';
-import Footer from '../common/Footer';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
 import PageTitle from '../common/PageTitle';
+import TopHeaderFive from '../components/TopHeaderFive';
+import BannerFive from './../components/BannerFive';
+import AboutFive from './../components/AboutFive';
+import MarqueeSlider from '../components/MarqueeSlider';
+import PropertyTypeFive from './../components/PropertyTypeFive';
+import ChooseUsFive from '../components/ChooseUsFive';
+import PropertyFive from '../components/PropertyFive';
+import GalleryFive from '../components/GalleryFive';
+import CounterSix from '../components/CounterSix';
+import BlogFive from '../components/BlogFive';
+import FooterFive from '../common/FooterFive';
 
 const HomeFive = () => {
     return (
@@ -16,6 +25,9 @@ const HomeFive = () => {
             <MobileMenu/>
             
             <main className="body-bg">
+
+                {/* TopHeaderFive */}
+                <TopHeaderFive/>
 
                 {/* Header */}
                 <Header 
@@ -33,12 +45,35 @@ const HomeFive = () => {
                     showContactNumber={true}
                 />
 
-                {/* Banner */}
-                <Banner/>
+                {/* BannerFive */}
+                <BannerFive/>
 
+                {/* AboutFive */}
+                <AboutFive/>
+
+                {/* MarqueeSlider */}
+                <MarqueeSlider/>
+
+                {/* PropertyTypeFive */}
+                <PropertyTypeFive/>
+
+                {/* ChooseUsFive */}
+                <ChooseUsFive/>
+
+                {/* Property */}
+                <PropertyFive/>
+
+                {/* Property */}
+                <GalleryFive/>
+
+                {/* CounterSix */}
+                <CounterSix/>
+
+                {/* BlogFive */}
+                <BlogFive/>
              
                 {/* Footer */}
-                <Footer/>
+                <FooterFive/>
                 
             </main>   
         </>

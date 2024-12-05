@@ -25,7 +25,7 @@ const PropertyFour = () => {
                         return (
                             <div className="col-lg-4 col-sm-6" key={index}>
                                 <PropertyItem 
-                                    itemClass="item-text-white bg-white"
+                                    itemClass="item-text-black bg-white"
                                     btnClass=""
                                     property={property}
                                     badgeText="Sales"

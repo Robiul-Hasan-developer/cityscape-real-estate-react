@@ -31,16 +31,5 @@
     #{$maxREMsize}rem
   );
 }
-
-
-// Use of this function, Please Uncomment this class and see how it works 
-// .demoClass {
-//   padding: clampCal(24, 40);
-//   font-size: clampCal(20, 48);
-// }
-// ============ If You need all properties you can use like this way ============ 
-// .demoClass {
-//   padding: clampCal(24, 40, 424, 991); // Here Properties are small device padding, Large device padding, small device width, Large device width   
-// }
 /* ======================== Functions Css End ======================= */
 

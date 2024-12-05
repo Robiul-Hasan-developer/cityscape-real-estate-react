@@ -6,7 +6,6 @@ import SectionHeading from '../common/SectionHeading';
 const BlogFour = () => {
     return (
         <>
-            {/* ================================ Blog Three Start ============================    */}
             <section className="blog padding-y-120">
                 <div className="container container-two">
 
@@ -35,7 +34,6 @@ const BlogFour = () => {
                     </div>
                 </div>
             </section>
-            {/* ================================ Blog Three End ============================    */}
         </>
     );
 };

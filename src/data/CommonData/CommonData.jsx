@@ -103,6 +103,10 @@ export const navMenus = [
             text: "Home Four",
             path: "/home-four",
         },
+        {
+            text: "Home Five",
+            path: "/home-five",
+        },
       ],
     },
     {

@@ -332,12 +332,29 @@
   }
 }
 
-.item-text-white {
+.item-text-black {
   h6, a, span, p {
     color: hsl(var(--heading-color));
   }
   .property-item__bottom {
     border-color: var(--border-color);
+  }
+  .icon {
+    color: hsl(var(--main));
+  }
+}
+
+.style-three {
+  padding: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  .property-item {
+    &__thumb {
+      border-radius: 8px;
+    }
+  }
+  .icon {
+    color: hsl(var(--main));
   }
 }
 /* ============================ Latest property Css End ==================== */

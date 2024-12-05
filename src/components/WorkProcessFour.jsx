@@ -26,7 +26,7 @@ const WorkProcessFour = () => {
                 </div>
                 <div className="col-lg-6">
                     <div className="working-process-item d-flex align-items-center">
-                        <Link to={'/project'} className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
+                        <Link to='/project' className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
                         <h2 className="working-process-item__number">01.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Home Staging</h6>
@@ -34,7 +34,7 @@ const WorkProcessFour = () => {
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
-                        <Link to={'/project'} className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
+                        <Link to='/project' className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
                         <h2 className="working-process-item__number">02.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Property Management</h6>
@@ -42,7 +42,7 @@ const WorkProcessFour = () => {
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
-                        <Link to={'/project'} className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
+                        <Link to='/project' className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
                         <h2 className="working-process-item__number">03.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Property Appraisal</h6>
@@ -50,7 +50,7 @@ const WorkProcessFour = () => {
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
-                        <Link to={'/project'} className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
+                        <Link to='/project' className="working-process-item__link"><i className="las la-long-arrow-alt-right"></i></Link>
                         <h2 className="working-process-item__number">04.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Rental Property</h6>

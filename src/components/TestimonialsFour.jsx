@@ -10,7 +10,7 @@ var settings = {
     autoplaySpeed: 2000,
     speed: 1500,
     dots: true,
-    loop: true,
+    infinite: true,
     pauseOnHover: true,
     arrows: true,
     responsive: [
